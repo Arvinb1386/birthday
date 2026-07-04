@@ -23,7 +23,7 @@ export default function App() {
 
   useEffect(() => {
     const birthday = new Audio('/birthday-song.mp3')
-    birthday.loop = false
+    birthday.loop = true
     birthday.volume = 0
     birthdayAudioRef.current = birthday
     birthday.addEventListener('canplaythrough', () => setHasBirthday(true))
